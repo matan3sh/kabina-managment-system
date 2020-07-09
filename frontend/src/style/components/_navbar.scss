@@ -1,0 +1,98 @@
+nav {
+  background: #f2f2f2;
+  color: #555;
+  padding: 10px 40px 10px 70px;
+  border-left: none;
+  border-right: none;
+  font-family: Varela;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li.logo {
+  font-size: 1.8rem;
+  font-family: Lato-Bold;
+  font-weight: 900;
+}
+
+.logo span {
+  color: #c62828;
+}
+
+nav ul div.items {
+  padding: 0 25px;
+  display: inline-flex;
+}
+
+nav ul div.items a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0 12px;
+}
+
+nav ul div.items a:hover {
+  color: rgb(117, 109, 155);
+}
+
+nav ul .search-icon {
+  height: 40px;
+  width: 240px;
+  display: flex;
+  background: #f2f2f2;
+  border-radius: 5px;
+  margin-left: 0.2rem;
+}
+
+nav ul .search-icon input {
+  height: 100%;
+  width: 250px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  color: #000;
+  font-size: 16px;
+  border-radius: 20px;
+  font-family: Montserrat;
+}
+
+nav ul .search-icon .icon {
+  height: 100%;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  position: relative;
+  right: 40px;
+}
+
+nav ul .search-icon .icon:hover {
+  background: #e6e6e6;
+}
+
+nav ul .search-icon .icon span {
+  color: #222;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    padding: 10px 30px 10px 10px;
+  }
+
+  nav ul div.items {
+    display: none;
+  }
+  nav ul li.logo {
+    text-align: center;
+    margin: auto;
+  }
+}

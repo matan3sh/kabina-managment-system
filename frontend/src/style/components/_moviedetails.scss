@@ -1,0 +1,127 @@
+.movie-details-wrapper {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.movie-details-header {
+  width: 100%;
+  position: relative;
+}
+
+.movie-details-header img {
+  width: 375px;
+  height: 400px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.movie-details-cube {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  width: 345px;
+  margin: auto;
+  position: relative;
+  bottom: 30px;
+}
+
+.movie-details-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  position: relative;
+  top: 30px;
+}
+
+.movie-details-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-details-name h2 {
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.movie-details-name span {
+  font-size: 0.8rem;
+}
+
+.star {
+  position: relative;
+  top: 6px;
+}
+
+hr {
+  margin: 0.5rem 0;
+  opacity: 0.3;
+}
+
+.movie-details-specs {
+  font-family: Varela;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem auto;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.movie-details-specs span {
+  color: $primary-color;
+}
+
+.movie-details-desc {
+  text-align: right;
+}
+
+.movie-details-desc p {
+  font-size: 0.75rem;
+  direction: rtl;
+}
+
+.movie-details-halls-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-left: 1.5rem;
+}
+
+.movie-details-halls {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 350px;
+}
+
+.hall-card {
+  padding: 0.5rem;
+  width: 80%;
+  height: 80px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hall-card h2 {
+  font-size: 1rem;
+}
+
+.hall-card h4 {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.last-update {
+  height: 70px;
+  margin: 2rem;
+  direction: rtl;
+  font-family: Varela;
+}

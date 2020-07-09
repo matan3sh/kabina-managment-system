@@ -1,0 +1,17 @@
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 70vh;
+}
+
+.profile-card .buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-card .buttons button {
+  margin: 1rem 0;
+}

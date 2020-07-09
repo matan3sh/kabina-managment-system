@@ -1,0 +1,28 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  height: 50vh;
+  font-family: Varela;
+}
+
+.about h1 {
+  font-size: 1rem;
+}
+
+.about h2 {
+  color: $primary-color;
+}
+
+.about h3 {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.about-social i {
+  margin: 1rem;
+  font-size: 2.5rem;
+}

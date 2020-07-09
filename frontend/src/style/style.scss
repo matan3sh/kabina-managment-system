@@ -1,0 +1,23 @@
+// Setup
+@import 'setup/variables';
+@import 'setup/typography';
+
+// Basics
+@import 'basic/base';
+@import 'basic/button';
+@import 'basic/input';
+@import 'basic/form';
+@import 'basic/layout';
+@import 'basic/text';
+@import 'basic/alert';
+
+// Components
+@import 'components/moviedetails';
+@import 'components/navbar';
+@import 'components/header';
+@import 'components/navbottom';
+@import 'components/home';
+@import 'components/transfers';
+@import 'components/messages';
+@import 'components/profile';
+@import 'components/about';

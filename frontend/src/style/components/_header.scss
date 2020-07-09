@@ -1,0 +1,34 @@
+.header {
+  background: #f2f2f2;
+  color: #555;
+  padding: 10px 40px 10px 40px;
+  border-left: none;
+  border-right: none;
+  font-family: Varela;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1 {
+  direction: rtl;
+  font-family: Varela;
+}
+
+.header .logo {
+  font-size: 1.8rem;
+  font-family: Lato-Bold;
+  font-weight: 900;
+  margin-right: 0.7rem;
+}
+
+.logo span {
+  color: #c62828;
+}
+
+.title {
+  position: relative;
+  top: 5px;
+}
