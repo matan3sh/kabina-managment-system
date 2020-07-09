@@ -29,10 +29,10 @@ function App() {
         <Alert />
         <Switch>
           <Route exact path='/' component={Home} />
-          <PrivateRoute exact path='/movie' component={MovieDetails} />
           <PrivateRoute exact path='/transfers' component={Transfers} />
           <PrivateRoute exact path='/messages' component={Messages} />
           <PrivateRoute exact path='/profile' component={Profile} />
+          <PrivateRoute exact path='/:id' component={MovieDetails} />
           <Route exact path='/about' component={About} />
           <Route exact path='/login' component={Login} />
         </Switch>

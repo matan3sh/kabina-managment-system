@@ -4,12 +4,12 @@ import thunk from 'redux-thunk';
 
 import authReducer from './auth/reducer';
 import alertReducer from './alert/reducer';
-import contactReducer from './contact/reducer';
+import movieReducer from './movie/reducer';
 
 const rootReducer = combineReducers({
   auth: authReducer,
   alert: alertReducer,
-  contact: contactReducer
+  movie: movieReducer
 });
 
 const store = createStore(

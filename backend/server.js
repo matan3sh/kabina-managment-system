@@ -17,7 +17,7 @@ app.get('/', (req, res) => res.json({ msg: 'Welcome to the API' }));
 // Define Routes
 app.use('/api/user', require('./routes/user'));
 app.use('/api/auth', require('./routes/auth'));
-app.use('/api/contact', require('./routes/contact'));
+app.use('/api/movie', require('./routes/movie'));
 
 app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, 'public/index.html'));
