@@ -38,6 +38,8 @@
 }
 
 .movie-details-name {
+  font-family: Varela;
+
   display: flex;
   justify-content: space-between;
 }
@@ -67,7 +69,7 @@ hr {
   color: #888;
 }
 
-.movie-details-specs span {
+.movie-details-specs p {
   color: $primary-color;
 }
 

@@ -23,7 +23,15 @@ export default function reducer(state = initialState, action) {
     case 'ADD_MOVIE':
       return {
         ...state,
-        movies: [...state.contacts, action.payload]
+        movies: [...state.movies, action.payload]
+      };
+    case 'UPDATE_MOVIE':
+      return {
+        ...state,
+        movies: state.movies.map((movie) =>
+          movie._id === action.payload._id ? action.payload : movie
+        ),
+        movie: action.payload
       };
     default:
       return state;

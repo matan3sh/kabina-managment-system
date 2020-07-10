@@ -1,9 +1,18 @@
 import movieService from '../../services/movieService';
 
+export const updateMovie = (movie) => async (dispatch) => {
+  try {
+    const updatedMovie = await movieService.update(movie);
+    dispatch({ type: 'UPDATE_MOVIE', payload: updatedMovie.data });
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 export const addMovie = (movie) => async (dispatch) => {
   try {
     const addedMovie = await movieService.add(movie);
-    dispatch({ type: 'ADD_MOVIE', payload: addedMovie });
+    dispatch({ type: 'ADD_MOVIE', payload: addedMovie.data });
   } catch (err) {
     console.log(err);
   }

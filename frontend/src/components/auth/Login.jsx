@@ -72,12 +72,9 @@ const Login = ({
             required
           />
         </div>
-        <input
-          type='submit'
-          value='Login'
-          className='btn'
-          style={{ marginTop: '1rem' }}
-        />
+        <button type='submit' className='btn' style={{ marginTop: '1rem' }}>
+          Login
+        </button>
       </form>
     </div>
   );

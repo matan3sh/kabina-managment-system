@@ -1,8 +1,9 @@
 .form-container {
   max-width: 500px;
-  margin: 5rem auto;
+  margin: 0.5rem auto;
   overflow: hidden;
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
+  direction: rtl;
 }

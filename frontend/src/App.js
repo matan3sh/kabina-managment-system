@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 import utilService from './services/utilService';
 
+import { ToastContainer, Zoom } from 'react-toastify';
 import Navbottom from './components/layout/Navbottom';
 import Alert from './components/shared/Alert';
 
@@ -26,15 +27,16 @@ function App() {
   return (
     <Provider store={store}>
       <Router>
+        <ToastContainer draggable={false} transition={Zoom} autoClose={5000} />
         <Alert />
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route exact path='/about' component={About} />
+          <Route exact path='/login' component={Login} />
           <PrivateRoute exact path='/transfers' component={Transfers} />
           <PrivateRoute exact path='/messages' component={Messages} />
           <PrivateRoute exact path='/profile' component={Profile} />
           <PrivateRoute exact path='/:id' component={MovieDetails} />
-          <Route exact path='/about' component={About} />
-          <Route exact path='/login' component={Login} />
         </Switch>
         <Navbottom />
       </Router>

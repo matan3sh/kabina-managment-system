@@ -26,8 +26,8 @@ const MovieSchema = mongoose.Schema({
     default: 'N/A'
   },
   kdm: {
-    type: String,
-    default: 'N/A'
+    type: Date,
+    default: ''
   },
   desc: {
     type: String,

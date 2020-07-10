@@ -12,6 +12,8 @@
 @import 'basic/alert';
 
 // Components
+@import 'components/movieupdate';
+@import 'components/movieadd';
 @import 'components/moviedetails';
 @import 'components/navbar';
 @import 'components/header';
@@ -21,3 +23,5 @@
 @import 'components/messages';
 @import 'components/profile';
 @import 'components/about';
+@import 'components/modal';
+@import 'components/floatingbutton';
