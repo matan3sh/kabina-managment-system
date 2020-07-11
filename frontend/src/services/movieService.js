@@ -4,8 +4,15 @@ export default {
   add,
   update,
   query,
+  remove,
   getById
 };
+
+async function remove(id) {
+  return await axios.delete(`/api/movie/${id}`, {
+    headers: { 'Contect-Type': 'application/json' }
+  });
+}
 
 async function add(movie) {
   return await axios.post('/api/movie', movie, {

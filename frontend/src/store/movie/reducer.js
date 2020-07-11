@@ -33,6 +33,11 @@ export default function reducer(state = initialState, action) {
         ),
         movie: action.payload
       };
+    case 'REMOVE_MOVIE':
+      return {
+        ...state,
+        movies: state.movies.filter((movie) => movie._id !== action.payload)
+      };
     default:
       return state;
   }

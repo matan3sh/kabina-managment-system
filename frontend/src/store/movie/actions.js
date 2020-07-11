@@ -1,5 +1,14 @@
 import movieService from '../../services/movieService';
 
+export const removeMovie = (id) => async (dispatch) => {
+  try {
+    await movieService.remove(id);
+    dispatch({ type: 'REMOVE_MOVIE', payload: id });
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 export const updateMovie = (movie) => async (dispatch) => {
   try {
     const updatedMovie = await movieService.update(movie);

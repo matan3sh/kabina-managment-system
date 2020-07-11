@@ -112,9 +112,14 @@ class MovieUpdate extends React.Component {
             onChange={this.onChange}
             required
           />
-          <button type='submit' className='btn'>
-            שמור
-          </button>
+          <div className='modal-footer'>
+            <button className='btn' type='submit'>
+              עדכן
+            </button>
+            <button className='btn btn-light' onClick={() => onClose()}>
+              ביטול
+            </button>
+          </div>
         </form>
       </Modal>
     );

@@ -6,6 +6,7 @@ import Loader from '../shared/Loader';
 import { FaStar } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 
+import Confirm from '../shared/Confirm';
 import MovieUpdate from '../movie/MovieUpdate';
 import moment from 'moment';
 import 'moment/locale/he';
@@ -13,7 +14,7 @@ import Moment from 'react-moment';
 moment.locale('he');
 
 class MovieDetails extends React.Component {
-  state = { openModal: false };
+  state = { openModal: false, openConfirm: false };
 
   componentDidMount() {
     const { id } = this.props.match.params;
@@ -27,8 +28,10 @@ class MovieDetails extends React.Component {
   }
 
   onClose = () => this.setState({ openModal: false });
-
   onOpen = () => this.setState({ openModal: true });
+
+  onOpenConfirm = () => this.setState({ openConfirm: true });
+  onCloseConfirm = () => this.setState({ openConfirm: false });
 
   onUpdate = (movie) => {
     this.props.updateMovie(movie);
@@ -41,7 +44,7 @@ class MovieDetails extends React.Component {
 
   render() {
     const { movie } = this.props;
-    const { openModal } = this.state;
+    const { openModal, openConfirm } = this.state;
     return (
       <>
         {movie === null ? (
@@ -53,6 +56,11 @@ class MovieDetails extends React.Component {
               openModal={openModal}
               onClose={this.onClose}
               onUpdate={this.onUpdate}
+            />
+            <Confirm
+              openConfirm={openConfirm}
+              onCloseConfirm={this.onCloseConfirm}
+              movie={movie}
             />
             <section className='movie-details-wrapper'>
               <div className='movie-details-header'>
@@ -85,7 +93,12 @@ class MovieDetails extends React.Component {
                     <p>{movie.desc}</p>
                   </div>
                   <div className='movie-details-buttons'>
-                    <button className='btn btn-light'>מחק</button>
+                    <button
+                      className='btn btn-light'
+                      onClick={this.onOpenConfirm}
+                    >
+                      מחק
+                    </button>
                     <button className='btn'>העבר לאולם</button>
                     <button className='btn btn-light' onClick={this.onOpen}>
                       עדכן
