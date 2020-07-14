@@ -49,11 +49,11 @@ const Login = ({
   return (
     <div className='form-container'>
       <h1>
-        Account <span className='text-primary'>Login</span>
+        לחשבון <span className='text-primary'>התחבר</span>
       </h1>
       <form onSubmit={onSubmit}>
         <div className='form-group'>
-          <label htmlFor='email'>Email Address</label>
+          <label htmlFor='email'>אימייל</label>
           <input
             type='email'
             name='email'
@@ -63,7 +63,7 @@ const Login = ({
           />
         </div>
         <div className='form-group'>
-          <label htmlFor='password'>Password</label>
+          <label htmlFor='password'>סיסמה</label>
           <input
             type='password'
             name='password'
@@ -73,7 +73,7 @@ const Login = ({
           />
         </div>
         <button type='submit' className='btn' style={{ marginTop: '1rem' }}>
-          Login
+          התחבר
         </button>
       </form>
     </div>
